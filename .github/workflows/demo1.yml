@@ -3,6 +3,9 @@ on:
   pull_request:
     types: [opened, reopened, closed]
   workflow_dispatch:
+  push:
+    branches: 
+      - main // main branch of your repository
 jobs:
   deploy:
     runs-on: ubuntu-latest
